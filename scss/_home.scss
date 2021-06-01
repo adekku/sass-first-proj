@@ -1,0 +1,24 @@
+.home {
+    height: 100%;
+    padding: 40% 0; /*vh was used in the tutorial, but I used % because of its straightforwardness*/
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background-image: 
+        linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), 
+        url('../img/model-1.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__name {
+        font-size: 5rem;
+        margin: 1rem 0;
+
+        border-bottom: 2px solid set-text-color($primary-color);
+        
+        &--last {
+            color: $secondary-color;
+            font-weight: 700;
+        }
+    }
+}
